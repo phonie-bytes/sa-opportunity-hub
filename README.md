@@ -6,7 +6,7 @@ Power-Save SA is an automated web tool designed for South African homeowners and
 - **Solar ROI Calculator:** Tailored to 2025/2026 South African electricity tariffs.
 - **20-Year Financial Forecast:** Visualizes long-term savings against Eskom increases.
 - **Automated Lead Gen:** Connects users with vetted installers.
-- **Zero Cost Stack:** Runs on Vercel (Free), Make.com (Free), and Google Sheets (Free).
+- **Zero Cost Stack:** Runs on GitHub Pages (Free), Make.com (Free), and Google Sheets (Free).
 
 ## Tech Stack
 - **Framework:** [Next.js 14](https://nextjs.org/) (App Router)

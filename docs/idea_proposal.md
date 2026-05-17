@@ -14,7 +14,7 @@ Power-Save SA is a mobile-first web tool designed for South African homeowners a
 - **Passive Income Potential:** R500 - R2000 per month from even a small number of qualified leads.
 
 ## 3. Tech Stack (Zero Cost)
-- **Frontend:** Next.js + Tailwind CSS (Vercel Free Tier).
+- **Frontend:** Next.js + Tailwind CSS (GitHub Pages).
 - **Database/Dashboard:** Google Sheets.
 - **Automation:** Make.com (Free Tier - 1000 ops/month).
 - **Communication:** Email (Gmail) via Make.com for lead delivery.
