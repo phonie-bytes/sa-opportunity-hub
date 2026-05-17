@@ -13,12 +13,24 @@ export default function Home() {
 
   const handleCalculate = (e: React.FormEvent) => {
     e.preventDefault();
+
+    const billAmount = Number(bill);
+    if (isNaN(billAmount) || billAmount <= 0) {
+      alert("Please enter a valid monthly bill amount.");
+      return;
+    }
+
     setLoading(true);
-    setTimeout(() => {
-      const res = calculateSolarROI({ monthlyBill: Number(bill), location: "Gauteng" });
-      setResults(res);
+    try {
+      setTimeout(() => {
+        const res = calculateSolarROI({ monthlyBill: billAmount, location: "Gauteng" });
+        setResults(res);
+        setLoading(false);
+      }, 600);
+    } catch (err) {
+      console.error("Calculation failed:", err);
       setLoading(false);
-    }, 600);
+    }
   };
 
   const handleLeadSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
