@@ -10,11 +10,13 @@ The repository is pre-configured with a GitHub Action (`.github/workflows/ci-cd.
 ## 2. One-Time Setup in GitHub
 To enable the deployment, you must perform these steps in your GitHub repository settings:
 
-1. Go to your repository on GitHub.
-2. Click on **Settings** (top tab).
-3. Select **Pages** from the left sidebar.
-4. Under **Build and deployment > Source**, ensure **GitHub Actions** is selected from the dropdown (instead of "Deploy from a branch").
-5. Your site will be live at `https://<your-username>.github.io/<your-repo-name>/` once the first workflow finishes.
+1. Create a new repository on GitHub named `power-save-sa`.
+2. Push your code to this repository.
+3. Go to your repository on GitHub.
+4. Click on **Settings** (top tab).
+5. Select **Pages** from the left sidebar.
+6. Under **Build and deployment > Source**, ensure **GitHub Actions** is selected from the dropdown (instead of "Deploy from a branch").
+7. Your site will be live at `https://<your-username>.github.io/power-save-sa/` once the first workflow finishes.
 
 ## 3. Why GitHub Pages is "Zero Cost"
 - **Hosting:** Free forever for public repositories.

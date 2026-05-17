@@ -30,34 +30,22 @@ To achieve 100% automation at zero cost, follow these steps to connect the front
    - Use a subject like: `New High-Intent Solar Lead: {{name}}`.
    - Body: `A new user just calculated their ROI and wants a quote. Details: {{phone}}, {{email}}, Bill: R{{bill}}.`
 
-## 3. Frontend Integration
-In `src/app/page.tsx`, update the `handleLeadSubmit` function to send the data to your Make.com Webhook URL:
+## 3. Frontend Integration (Environment Variables)
+The application is already configured to use the `NEXT_PUBLIC_MAKE_WEBHOOK_URL` environment variable.
 
-```javascript
-const handleLeadSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-
-  const webhookUrl = "YOUR_MAKE_WEBHOOK_URL_HERE";
-  const formData = {
-    name: e.target.name.value,
-    email: e.target.email.value,
-    phone: e.target.phone.value,
-    bill: bill,
-    timestamp: new Date().toISOString()
-  };
-
-  try {
-    await fetch(webhookUrl, {
-      method: 'POST',
-      body: JSON.stringify(formData),
-      headers: { 'Content-Type': 'application/json' }
-    });
-    setSubmitted(true);
-  } catch (err) {
-    console.error("Failed to send lead", err);
-  }
-};
+### For Local Development:
+Create a `.env.local` file in the root of the project and add your Make.com Webhook URL:
+```env
+NEXT_PUBLIC_MAKE_WEBHOOK_URL=https://hook.eu1.make.com/your-unique-id
 ```
+
+### For GitHub Pages Deployment:
+1. Go to your repository on GitHub.
+2. Navigate to **Settings > Secrets and variables > Actions**.
+3. Create a **New repository secret** (or Variable if you prefer, but Secret is safer):
+   - **Name:** `NEXT_PUBLIC_MAKE_WEBHOOK_URL`
+   - **Value:** Your Make.com Webhook URL.
+4. The CI/CD pipeline will automatically inject this during the build process.
 
 ## 4. Monitoring
 Install the **Google Sheets** app on your phone. You can now check your "Leads" tab in real-time. Each new row added by Make.com will trigger a notification if you enable it.

@@ -1,0 +1,22 @@
+
+> power-save-sa@1.0.0 dev
+> next dev
+
+   ▲ Next.js 15.2.1
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.0.2:3000
+
+ ✓ Starting...
+ ✓ Ready in 1800ms
+ ○ Compiling / ...
+ ✓ Compiled / in 8.8s (1512 modules)
+ GET / 200 in 9719ms
+ ✓ Compiled in 265ms (737 modules)
+ GET / 200 in 129ms
+ ⚠ Found a change in next.config.mjs. Restarting the server to apply the changes...
+   ▲ Next.js 15.2.1
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.0.2:3000
+
+ ✓ Starting...
+ ✓ Ready in 3.5s

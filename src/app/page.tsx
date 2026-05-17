@@ -110,7 +110,7 @@ export default function Home() {
                 Stop Overpaying for Electricity
               </h2>
               <h1 className="text-5xl lg:text-6xl font-black tracking-tight leading-[1.1] text-slate-900">
-                Beat Eskom's Price Hikes with <span className="text-amber-500 underline decoration-amber-200 decoration-8 underline-offset-4">Solar</span>.
+                Beat Eskom&apos;s Price Hikes with <span className="text-amber-500 underline decoration-amber-200 decoration-8 underline-offset-4">Solar</span>.
               </h1>
               <p className="text-lg text-slate-500 max-w-md leading-relaxed">
                 Calculate your return on investment in seconds. We use real 2025/26 municipal tariff data to find your break-even point.
@@ -283,7 +283,7 @@ export default function Home() {
           <div className="p-8 bg-white rounded-3xl border border-slate-50 shadow-sm space-y-4">
             <div className="bg-green-50 p-3 w-fit rounded-2xl"><ShieldCheck className="text-green-500 w-5 h-5" /></div>
             <h4 className="font-bold text-slate-900">Zero Obligation</h4>
-            <p className="text-sm text-slate-500 leading-relaxed">Use the tool as many times as you like. We only connect you to installers when you're ready.</p>
+            <p className="text-sm text-slate-500 leading-relaxed">Use the tool as many times as you like. We only connect you to installers when you&apos;re ready.</p>
           </div>
         </div>
       </div>
